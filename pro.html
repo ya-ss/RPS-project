@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div id="bigContainer" class="d-flex flex-fill flex-row align-items-center justify-content-center bg">
+            <div id="rpsBtnGroup" class="d-flex flex-column">
+                <div class="p-2"><button class="btns" id="rockBtn"></button></div>
+                <div class="p-2"><button class="btns" id="paperBtn"></button></div>
+                <div class="p-2"><button class="btns" id="scissorBtn"></button></div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="p-2" id="label">YOU</div>
+                <div class="p-2" id="imgDiv"><img id="playerImg" class="img" src="./images/Paper.png"></div>
+            </div>
+            <div  id="winloseLbls" class="d-flex flex-column">
+                <div class="p-2 lbl1" id="winloseLbl1">YOU WON!</div>
+                <div class="p-2"><button id="shootBtn">SHOOT</button></div> 
+            <div class="p-2 lbl2" id="winloseLbl2">YOU WON!</div>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="p-2" id="label">AI</div>
+                <div class="p-2" id="imgDiv"><img id="enemyImg" class="img" src="images/Rock.png"></div>
+            </div>
+        </div>
+    <!-- <script src="path/to/bootstrap.js"></script> -->
+    <script src="pro.js"></script>
+</body>
+</html>

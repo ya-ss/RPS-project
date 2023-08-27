@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Kavoon&display=swap');
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#bigContainer div{
+    padding: 20px;
+}
+
+
+#bigContainer{
+    background-color: #260071;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#winloseLbls .lbl1, #winloseLbls .lbl2, #shootBtn{
+    font-family: Kavoon;
+}
+
+
+#label{
+    font-family: Josefin sans;
+    font-weight: 700;
+    color: white;
+    font-size: 25px;
+}
+
+.btns{
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+} 
+
+#rockBtn{
+    background: #F429E7;
+
+}
+
+#paperBtn{
+    background: #18DFC2;
+
+}
+
+#scissorBtn{
+    background: #1F78F0;
+
+}
+
+#shootBtn{
+    border: 1px solid white;
+    border-radius: 50px;
+    background: #050A30;
+    color: white;
+    width: 100px;
+    padding: 10px;
+}
+
+#imgDiv{
+    height: 350px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.img-unselct{
+    filter: blur(50px);
+    filter: grayscale(100%);
+    filter: color(40%);
+}
+
+#winloseLbls .lbl1{
+    color: white;
+    margin-bottom: 100px;
+    display: none;
+
+}
+
+#winloseLbls .lbl2{
+    color: white;
+    margin-top: 100px;
+    display: none;
+}
+
+
+#bigContainerLost{
+    background: #B60000;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#bigContainerWin{
+    background: #23AF00;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#bigContainerTie{
+    background: #565f6e;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#winloseLbls div{
+    font-family: Kavoon;
+}
+
+#winloseLbls .lbl2-lost{
+    display: block;
+
+    animation: labelColor1Lost;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    animation: labelMoving1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.7,0.9,0.5,1)
+}
+#winloseLbls .lbl1-lost{
+    display: block;
+    animation: labelColor2Lost;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    animation: labelMoving2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.7,0.9,0.5,1)
+}
+#winloseLbls .lbl2-win{
+    display: block;
+    animation: labelColor2Won;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    animation: labelMoving1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.7,0.9,0.5,1)
+}
+#winloseLbls .lbl1-win{
+    display: block;
+    animation: labelColor1Won;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    animation: labelMoving2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.7,0.9,0.5,1)
+}
+#winloseLbls .lbl1-tie{
+    display: block;
+    animation: labelColor2Tie;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    animation: labelMoving2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.7,0.9,0.5,1)
+}
+#winloseLbls .lbl2-tie{
+    
+    display: block;
+    animation: labelColor1Tie;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    animation: labelMoving1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.7,0.9,0.5,1)
+    
+
+}
+
+ 
+
+@keyframes labelColor1Won{
+    0% {color: #104E00;}
+    50% {color: white;}
+    100% {color: #104E00;}
+}
+@keyframes labelMoving1 {
+    from {margin-top: 100px;}
+    to {margin-top: 0px;} 
+}
+@keyframes labelColor2Won{
+    0% {color: white;}
+    50% {color: #104E00;}
+    100% {color: white;}
+}
+
+@keyframes labelMoving2 {
+    from {margin-bottom: 100px;}
+    to {margin-bottom: 0px;} 
+}
+@keyframes labelColor1Lost{
+    0% {color: #460000;}
+    50% {color: white;}
+    100% {color: #460000;}
+
+}
+@keyframes labelColor2Lost{
+    0% {color: white;}
+    50% {color: #460000;}
+    100% {color: white;}
+}
+@keyframes labelColor1Tie{
+    0% {color: #50545c;}
+    50% {color: white;}
+    100% {color: #50545c;}
+
+}
+@keyframes labelColor2Tie{
+    0% {color: white;}
+    50% {color: #50545c;}
+    100% {color: white;}
+}
